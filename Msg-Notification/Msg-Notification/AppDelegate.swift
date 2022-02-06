@@ -11,8 +11,6 @@ import UserNotifications
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         if #available(iOS 10.0, *) {
@@ -20,7 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
             notiCenter.requestAuthorization(options: [.alert, .badge, .sound]) { (didAllow, e) in }
             notiCenter.delegate = self
         } else {
-            
+            let setting = UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: nil)
+            application.registerUserNotificationSettings(setting)
         }
         return true
     }
@@ -32,6 +31,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
             print(userInfo["name"]!)
         }
         completionHandler([.alert, .badge, .sound])
+    }
+    
+    @available(iOS 10.0,*)
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        if response.notification.request.identifier == "wakeup" {
+            let userInfo = response.notification.request.content.userInfo
+            print(userInfo["name"]!)
+        }
+        completionHandler()
     }
     
     
