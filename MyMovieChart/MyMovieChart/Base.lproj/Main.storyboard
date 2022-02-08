@@ -11,32 +11,36 @@
         <scene sceneID="fOl-6K-vyL">
             <objects>
                 <tableViewController id="t5B-sI-xyh" customClass="ListViewController" customModule="MyMovieChart" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="zna-gg-wDF">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="109" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="zna-gg-wDF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <view key="tableFooterView" contentMode="scaleToFill" id="E8T-RV-uJe">
-                            <rect key="frame" x="0.0" y="157" width="414" height="697"/>
+                            <rect key="frame" x="0.0" y="176" width="414" height="697"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4dd-RP-Rx0">
+                                    <rect key="frame" x="168" y="8" width="78" height="31"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="더보기"/>
+                                    <connections>
+                                        <action selector="more:" destination="t5B-sI-xyh" eventType="touchUpInside" id="Ehv-Lk-Uzr"/>
+                                    </connections>
+                                </button>
+                            </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ListCell" rowHeight="90" id="qLz-P1-hjk" customClass="MovieCell" customModule="MyMovieChart" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="44.5" width="414" height="90"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ListCell" rowHeight="109" id="qLz-P1-hjk" customClass="MovieCell" customModule="MyMovieChart" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="109"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qLz-P1-hjk" id="mUm-kR-Fmg">
-                                    <rect key="frame" x="0.0" y="0.0" width="384.5" height="90"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="384.5" height="109"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="영화 제목" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H9X-3i-iae">
-                                            <rect key="frame" x="16" y="15" width="240" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" tag="102" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="영화에 대한 내용 설명" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DkW-cx-xUg">
-                                            <rect key="frame" x="16" y="58" width="271" height="21"/>
+                                            <rect key="frame" x="72" y="11" width="198" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -56,12 +60,24 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="102" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="영화에 대한 내용 설명" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DkW-cx-xUg">
+                                            <rect key="frame" x="72" y="56" width="271" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZZ5-lI-tFo">
+                                            <rect key="frame" x="4" y="5" width="60" height="80"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="desc" destination="DkW-cx-xUg" id="4qB-H6-ajx"/>
                                     <outlet property="opendate" destination="y3O-DZ-p5U" id="Qme-jr-mVz"/>
                                     <outlet property="rating" destination="D0O-at-PGz" id="hIJ-xW-tJi"/>
+                                    <outlet property="thumbnail" destination="ZZ5-lI-tFo" id="koz-uX-spA"/>
                                     <outlet property="title" destination="H9X-3i-iae" id="k79-Ny-6ol"/>
                                 </connections>
                             </tableViewCell>
@@ -73,6 +89,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="영화정보" id="Seo-fG-1eW"/>
+                    <connections>
+                        <outlet property="UIButton" destination="4dd-RP-Rx0" id="az6-iZ-HBY"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gs6-Of-EeP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -16,4 +16,5 @@ class MovieCell: UITableViewCell {
     
     @IBOutlet var desc: UILabel!
     
+    @IBOutlet var thumbnail: UIImageView!
 }

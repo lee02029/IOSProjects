@@ -7,37 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F616A41727B111A20037463A /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F616A41627B111A20037463A /* MovieCell.swift */; };
-		F6B3FD6527B2505900392663 /* secret.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F6B3FD6227B2505900392663 /* secret.jpg */; };
-		F6B3FD6627B2505900392663 /* darknight.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F6B3FD6327B2505900392663 /* darknight.jpg */; };
-		F6B3FD6727B2505900392663 /* rain.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F6B3FD6427B2505900392663 /* rain.jpg */; };
-		F6EFBFBB27B0DDCA00025504 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EFBFBA27B0DDCA00025504 /* AppDelegate.swift */; };
-		F6EFBFBD27B0DDCA00025504 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EFBFBC27B0DDCA00025504 /* SceneDelegate.swift */; };
-		F6EFBFC227B0DDCA00025504 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6EFBFC027B0DDCA00025504 /* Main.storyboard */; };
-		F6EFBFC427B0DDCA00025504 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6EFBFC327B0DDCA00025504 /* Assets.xcassets */; };
-		F6EFBFC727B0DDCA00025504 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6EFBFC527B0DDCA00025504 /* LaunchScreen.storyboard */; };
-		F6EFBFCF27B0DE7600025504 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EFBFCE27B0DE7600025504 /* ListViewController.swift */; };
-		F6EFBFD127B0E09F00025504 /* MovieVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EFBFD027B0E09F00025504 /* MovieVO.swift */; };
+		F6B3FD7527B2684D00392663 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B3FD7427B2684D00392663 /* AppDelegate.swift */; };
+		F6B3FD7727B2684D00392663 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B3FD7627B2684D00392663 /* SceneDelegate.swift */; };
+		F6B3FD7927B2684D00392663 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B3FD7827B2684D00392663 /* ViewController.swift */; };
+		F6B3FD7C27B2684D00392663 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6B3FD7A27B2684D00392663 /* Main.storyboard */; };
+		F6B3FD7E27B2684D00392663 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6B3FD7D27B2684D00392663 /* Assets.xcassets */; };
+		F6B3FD8127B2684D00392663 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6B3FD7F27B2684D00392663 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F616A41627B111A20037463A /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
-		F6B3FD6227B2505900392663 /* secret.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = secret.jpg; sourceTree = "<group>"; };
-		F6B3FD6327B2505900392663 /* darknight.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = darknight.jpg; sourceTree = "<group>"; };
-		F6B3FD6427B2505900392663 /* rain.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rain.jpg; sourceTree = "<group>"; };
-		F6EFBFB727B0DDCA00025504 /* MyMovieChart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMovieChart.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F6EFBFBA27B0DDCA00025504 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F6EFBFBC27B0DDCA00025504 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F6EFBFC127B0DDCA00025504 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F6EFBFC327B0DDCA00025504 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F6EFBFC627B0DDCA00025504 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		F6EFBFC827B0DDCA00025504 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F6EFBFCE27B0DE7600025504 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
-		F6EFBFD027B0E09F00025504 /* MovieVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieVO.swift; sourceTree = "<group>"; };
+		F6B3FD7127B2684D00392663 /* MyMovieChart-SpinOff.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MyMovieChart-SpinOff.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6B3FD7427B2684D00392663 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F6B3FD7627B2684D00392663 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F6B3FD7827B2684D00392663 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F6B3FD7B27B2684D00392663 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F6B3FD7D27B2684D00392663 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F6B3FD8027B2684D00392663 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F6B3FD8227B2684D00392663 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		F6EFBFB427B0DDCA00025504 /* Frameworks */ = {
+		F6B3FD6E27B2684D00392663 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -47,85 +37,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F6B3FD6127B2502400392663 /* Resources */ = {
+		F6B3FD6827B2684D00392663 = {
 			isa = PBXGroup;
 			children = (
-				F6B3FD6327B2505900392663 /* darknight.jpg */,
-				F6B3FD6427B2505900392663 /* rain.jpg */,
-				F6B3FD6227B2505900392663 /* secret.jpg */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		F6EFBFAE27B0DDCA00025504 = {
-			isa = PBXGroup;
-			children = (
-				F6EFBFB927B0DDCA00025504 /* MyMovieChart */,
-				F6EFBFB827B0DDCA00025504 /* Products */,
+				F6B3FD7327B2684D00392663 /* MyMovieChart-SpinOff */,
+				F6B3FD7227B2684D00392663 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		F6EFBFB827B0DDCA00025504 /* Products */ = {
+		F6B3FD7227B2684D00392663 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F6EFBFB727B0DDCA00025504 /* MyMovieChart.app */,
+				F6B3FD7127B2684D00392663 /* MyMovieChart-SpinOff.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F6EFBFB927B0DDCA00025504 /* MyMovieChart */ = {
+		F6B3FD7327B2684D00392663 /* MyMovieChart-SpinOff */ = {
 			isa = PBXGroup;
 			children = (
-				F6B3FD6127B2502400392663 /* Resources */,
-				F616A41627B111A20037463A /* MovieCell.swift */,
-				F6EFBFBA27B0DDCA00025504 /* AppDelegate.swift */,
-				F6EFBFBC27B0DDCA00025504 /* SceneDelegate.swift */,
-				F6EFBFD027B0E09F00025504 /* MovieVO.swift */,
-				F6EFBFCE27B0DE7600025504 /* ListViewController.swift */,
-				F6EFBFC027B0DDCA00025504 /* Main.storyboard */,
-				F6EFBFC527B0DDCA00025504 /* LaunchScreen.storyboard */,
-				F6EFBFC327B0DDCA00025504 /* Assets.xcassets */,
-				F6EFBFC827B0DDCA00025504 /* Info.plist */,
+				F6B3FD7427B2684D00392663 /* AppDelegate.swift */,
+				F6B3FD7627B2684D00392663 /* SceneDelegate.swift */,
+				F6B3FD7827B2684D00392663 /* ViewController.swift */,
+				F6B3FD7A27B2684D00392663 /* Main.storyboard */,
+				F6B3FD7D27B2684D00392663 /* Assets.xcassets */,
+				F6B3FD7F27B2684D00392663 /* LaunchScreen.storyboard */,
+				F6B3FD8227B2684D00392663 /* Info.plist */,
 			);
-			path = MyMovieChart;
+			path = "MyMovieChart-SpinOff";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F6EFBFB627B0DDCA00025504 /* MyMovieChart */ = {
+		F6B3FD7027B2684D00392663 /* MyMovieChart-SpinOff */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F6EFBFCB27B0DDCA00025504 /* Build configuration list for PBXNativeTarget "MyMovieChart" */;
+			buildConfigurationList = F6B3FD8527B2684D00392663 /* Build configuration list for PBXNativeTarget "MyMovieChart-SpinOff" */;
 			buildPhases = (
-				F6EFBFB327B0DDCA00025504 /* Sources */,
-				F6EFBFB427B0DDCA00025504 /* Frameworks */,
-				F6EFBFB527B0DDCA00025504 /* Resources */,
+				F6B3FD6D27B2684D00392663 /* Sources */,
+				F6B3FD6E27B2684D00392663 /* Frameworks */,
+				F6B3FD6F27B2684D00392663 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = MyMovieChart;
-			productName = MyMovieChart;
-			productReference = F6EFBFB727B0DDCA00025504 /* MyMovieChart.app */;
+			name = "MyMovieChart-SpinOff";
+			productName = "MyMovieChart-SpinOff";
+			productReference = F6B3FD7127B2684D00392663 /* MyMovieChart-SpinOff.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		F6EFBFAF27B0DDCA00025504 /* Project object */ = {
+		F6B3FD6927B2684D00392663 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1300;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
-					F6EFBFB627B0DDCA00025504 = {
+					F6B3FD7027B2684D00392663 = {
 						CreatedOnToolsVersion = 13.0;
 					};
 				};
 			};
-			buildConfigurationList = F6EFBFB227B0DDCA00025504 /* Build configuration list for PBXProject "MyMovieChart" */;
+			buildConfigurationList = F6B3FD6C27B2684D00392663 /* Build configuration list for PBXProject "MyMovieChart-SpinOff" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -133,60 +110,55 @@
 				en,
 				Base,
 			);
-			mainGroup = F6EFBFAE27B0DDCA00025504;
-			productRefGroup = F6EFBFB827B0DDCA00025504 /* Products */;
+			mainGroup = F6B3FD6827B2684D00392663;
+			productRefGroup = F6B3FD7227B2684D00392663 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F6EFBFB627B0DDCA00025504 /* MyMovieChart */,
+				F6B3FD7027B2684D00392663 /* MyMovieChart-SpinOff */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		F6EFBFB527B0DDCA00025504 /* Resources */ = {
+		F6B3FD6F27B2684D00392663 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6EFBFC727B0DDCA00025504 /* LaunchScreen.storyboard in Resources */,
-				F6B3FD6727B2505900392663 /* rain.jpg in Resources */,
-				F6EFBFC427B0DDCA00025504 /* Assets.xcassets in Resources */,
-				F6EFBFC227B0DDCA00025504 /* Main.storyboard in Resources */,
-				F6B3FD6527B2505900392663 /* secret.jpg in Resources */,
-				F6B3FD6627B2505900392663 /* darknight.jpg in Resources */,
+				F6B3FD8127B2684D00392663 /* LaunchScreen.storyboard in Resources */,
+				F6B3FD7E27B2684D00392663 /* Assets.xcassets in Resources */,
+				F6B3FD7C27B2684D00392663 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		F6EFBFB327B0DDCA00025504 /* Sources */ = {
+		F6B3FD6D27B2684D00392663 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6EFBFBB27B0DDCA00025504 /* AppDelegate.swift in Sources */,
-				F6EFBFCF27B0DE7600025504 /* ListViewController.swift in Sources */,
-				F6EFBFBD27B0DDCA00025504 /* SceneDelegate.swift in Sources */,
-				F616A41727B111A20037463A /* MovieCell.swift in Sources */,
-				F6EFBFD127B0E09F00025504 /* MovieVO.swift in Sources */,
+				F6B3FD7927B2684D00392663 /* ViewController.swift in Sources */,
+				F6B3FD7527B2684D00392663 /* AppDelegate.swift in Sources */,
+				F6B3FD7727B2684D00392663 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F6EFBFC027B0DDCA00025504 /* Main.storyboard */ = {
+		F6B3FD7A27B2684D00392663 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F6EFBFC127B0DDCA00025504 /* Base */,
+				F6B3FD7B27B2684D00392663 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		F6EFBFC527B0DDCA00025504 /* LaunchScreen.storyboard */ = {
+		F6B3FD7F27B2684D00392663 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F6EFBFC627B0DDCA00025504 /* Base */,
+				F6B3FD8027B2684D00392663 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -194,7 +166,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		F6EFBFC927B0DDCA00025504 /* Debug */ = {
+		F6B3FD8327B2684D00392663 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -255,7 +227,7 @@
 			};
 			name = Debug;
 		};
-		F6EFBFCA27B0DDCA00025504 /* Release */ = {
+		F6B3FD8427B2684D00392663 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -310,7 +282,7 @@
 			};
 			name = Release;
 		};
-		F6EFBFCC27B0DDCA00025504 /* Debug */ = {
+		F6B3FD8627B2684D00392663 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -319,7 +291,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 826S2MP53C;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MyMovieChart/Info.plist;
+				INFOPLIST_FILE = "MyMovieChart-SpinOff/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -330,7 +302,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.yoonjae.MyMovieChart;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yoonjae.MyMovieChart-SpinOff";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -338,7 +310,7 @@
 			};
 			name = Debug;
 		};
-		F6EFBFCD27B0DDCA00025504 /* Release */ = {
+		F6B3FD8727B2684D00392663 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -347,7 +319,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 826S2MP53C;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MyMovieChart/Info.plist;
+				INFOPLIST_FILE = "MyMovieChart-SpinOff/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -358,7 +330,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.yoonjae.MyMovieChart;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yoonjae.MyMovieChart-SpinOff";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -369,25 +341,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F6EFBFB227B0DDCA00025504 /* Build configuration list for PBXProject "MyMovieChart" */ = {
+		F6B3FD6C27B2684D00392663 /* Build configuration list for PBXProject "MyMovieChart-SpinOff" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F6EFBFC927B0DDCA00025504 /* Debug */,
-				F6EFBFCA27B0DDCA00025504 /* Release */,
+				F6B3FD8327B2684D00392663 /* Debug */,
+				F6B3FD8427B2684D00392663 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F6EFBFCB27B0DDCA00025504 /* Build configuration list for PBXNativeTarget "MyMovieChart" */ = {
+		F6B3FD8527B2684D00392663 /* Build configuration list for PBXNativeTarget "MyMovieChart-SpinOff" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F6EFBFCC27B0DDCA00025504 /* Debug */,
-				F6EFBFCD27B0DDCA00025504 /* Release */,
+				F6B3FD8627B2684D00392663 /* Debug */,
+				F6B3FD8727B2684D00392663 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = F6EFBFAF27B0DDCA00025504 /* Project object */;
+	rootObject = F6B3FD6927B2684D00392663 /* Project object */;
 }
