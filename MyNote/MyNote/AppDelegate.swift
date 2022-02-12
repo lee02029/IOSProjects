@@ -10,6 +10,7 @@ import CoreData
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    var memolist = [MemoData]()
 
 
 
