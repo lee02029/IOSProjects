@@ -74,7 +74,18 @@
                         <view key="tableFooterView" contentMode="scaleToFill" id="ZqE-GL-zs3">
                             <rect key="frame" x="0.0" y="227" width="414" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mk4-dZ-i21" customClass="CSLogButton" customModule="MyNote" customModuleProvider="target">
+                                    <rect key="frame" x="176.5" y="6.5" width="61" height="31"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="더보기"/>
+                                </button>
+                            </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="Mk4-dZ-i21" firstAttribute="centerY" secondItem="ZqE-GL-zs3" secondAttribute="centerY" id="KXg-aq-0hO"/>
+                                <constraint firstItem="Mk4-dZ-i21" firstAttribute="centerX" secondItem="ZqE-GL-zs3" secondAttribute="centerX" id="Mlh-0N-JGI"/>
+                            </constraints>
                         </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="memoCell" rowHeight="80" id="Mj3-YH-Lqm" customClass="MemoCell" customModule="MyNote" customModuleProvider="target">

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F61FCC3627BBA3E0000F2B3C /* CSLogButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61FCC3527BBA3E0000F2B3C /* CSLogButton.swift */; };
+		F61FCC3B27BBA820000F2B3C /* warning-icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F61FCC3827BBA820000F2B3C /* warning-icon-60@2x.png */; };
+		F61FCC3C27BBA820000F2B3C /* button-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = F61FCC3927BBA820000F2B3C /* button-bg.png */; };
+		F61FCC3D27BBA820000F2B3C /* memo-background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F61FCC3A27BBA820000F2B3C /* memo-background@2x.png */; };
 		F678B78E27B7AF1400F4C4D7 /* MemoListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F678B78D27B7AF1400F4C4D7 /* MemoListVC.swift */; };
 		F678B79027B7AF2900F4C4D7 /* MemoFormVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F678B78F27B7AF2900F4C4D7 /* MemoFormVC.swift */; };
 		F678B79227B7AF3400F4C4D7 /* MemoReadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F678B79127B7AF3400F4C4D7 /* MemoReadVC.swift */; };
@@ -22,6 +26,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F61FCC3527BBA3E0000F2B3C /* CSLogButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSLogButton.swift; sourceTree = "<group>"; };
+		F61FCC3827BBA820000F2B3C /* warning-icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "warning-icon-60@2x.png"; sourceTree = "<group>"; };
+		F61FCC3927BBA820000F2B3C /* button-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-bg.png"; sourceTree = "<group>"; };
+		F61FCC3A27BBA820000F2B3C /* memo-background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "memo-background@2x.png"; sourceTree = "<group>"; };
 		F678B78D27B7AF1400F4C4D7 /* MemoListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListVC.swift; sourceTree = "<group>"; };
 		F678B78F27B7AF2900F4C4D7 /* MemoFormVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoFormVC.swift; sourceTree = "<group>"; };
 		F678B79127B7AF3400F4C4D7 /* MemoReadVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoReadVC.swift; sourceTree = "<group>"; };
@@ -49,9 +57,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F61FCC3727BBA80F000F2B3C /* Recources */ = {
+			isa = PBXGroup;
+			children = (
+				F61FCC3927BBA820000F2B3C /* button-bg.png */,
+				F61FCC3A27BBA820000F2B3C /* memo-background@2x.png */,
+				F61FCC3827BBA820000F2B3C /* warning-icon-60@2x.png */,
+			);
+			path = Recources;
+			sourceTree = "<group>";
+		};
 		F6EBC86A27B668B500C73CAD = {
 			isa = PBXGroup;
 			children = (
+				F61FCC3727BBA80F000F2B3C /* Recources */,
 				F6EBC87527B668B500C73CAD /* MyNote */,
 				F6EBC87427B668B500C73CAD /* Products */,
 			);
@@ -81,6 +100,7 @@
 				F678B79127B7AF3400F4C4D7 /* MemoReadVC.swift */,
 				F678B79327B7AF8900F4C4D7 /* MemoCell.swift */,
 				F678B79527B7AFA500F4C4D7 /* MemoData.swift */,
+				F61FCC3527BBA3E0000F2B3C /* CSLogButton.swift */,
 			);
 			path = MyNote;
 			sourceTree = "<group>";
@@ -144,7 +164,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6EBC88627B668B600C73CAD /* LaunchScreen.storyboard in Resources */,
+				F61FCC3C27BBA820000F2B3C /* button-bg.png in Resources */,
 				F6EBC88327B668B600C73CAD /* Assets.xcassets in Resources */,
+				F61FCC3B27BBA820000F2B3C /* warning-icon-60@2x.png in Resources */,
+				F61FCC3D27BBA820000F2B3C /* memo-background@2x.png in Resources */,
 				F6EBC87E27B668B500C73CAD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -162,6 +185,7 @@
 				F6EBC87727B668B500C73CAD /* AppDelegate.swift in Sources */,
 				F6EBC87927B668B500C73CAD /* SceneDelegate.swift in Sources */,
 				F6EBC88127B668B500C73CAD /* MyNote.xcdatamodeld in Sources */,
+				F61FCC3627BBA3E0000F2B3C /* CSLogButton.swift in Sources */,
 				F678B79627B7AFA500F4C4D7 /* MemoData.swift in Sources */,
 				F678B79227B7AF3400F4C4D7 /* MemoReadVC.swift in Sources */,
 				F678B79427B7AF8900F4C4D7 /* MemoCell.swift in Sources */,
