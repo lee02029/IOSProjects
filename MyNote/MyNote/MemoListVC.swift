@@ -44,5 +44,16 @@ class MemoListVC: UITableViewController {
         vc.param = row
         self.navigationController?.pushViewController(vc, animated: true)
     }
+    
+    override func viewDidLoad() {
+        if let revealVC = self.revealViewController() {
+            let btn = UIBarButtonItem()
+            btn.image = UIImage(named: "sidemenu.png")
+            btn.target = revealVC
+            btn.action = #selector(revealVC.revealToggle(_:))
+            self.navigationItem.leftBarButtonItem = btn
+            self.view.addGestureRecognizer(revealVC.panGestureRecognizer())
+        }
+    }
 
 }

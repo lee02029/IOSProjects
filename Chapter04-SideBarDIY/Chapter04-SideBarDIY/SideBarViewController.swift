@@ -26,6 +26,16 @@ class SideBarViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        let accountLabel = UILabel()
+        accountLabel.frame = CGRect(x: 10, y: 30, width: self.view.frame.width, height: 30)
+        accountLabel.text = "sqlpro@naver.com"
+        accountLabel.textColor = .white
+        accountLabel.font = UIFont.boldSystemFont(ofSize: 15)
+        let v = UIView()
+        v.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: 70)
+        v.backgroundColor = .brown
+        v.addSubview(accountLabel)
+        self.tableView.tableHeaderView = v
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
