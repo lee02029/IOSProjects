@@ -34,6 +34,7 @@
 		F6EBC88127B668B500C73CAD /* MyNote.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F6EBC87F27B668B500C73CAD /* MyNote.xcdatamodeld */; };
 		F6EBC88327B668B600C73CAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6EBC88227B668B600C73CAD /* Assets.xcassets */; };
 		F6EBC88627B668B600C73CAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6EBC88427B668B600C73CAD /* LaunchScreen.storyboard */; };
+		F6F5BF6C27C075DD00193BEF /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F5BF6B27C075DD00193BEF /* ProfileVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +69,7 @@
 		F6EBC88227B668B600C73CAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F6EBC88527B668B600C73CAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F6EBC88727B668B600C73CAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6F5BF6B27C075DD00193BEF /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,7 +124,7 @@
 			children = (
 				F6E8FA4C27BD6E9000F85C9F /* SWRevealViewController.h */,
 				F6E8FA4D27BD6E9000F85C9F /* SWRevealViewController.m */,
-				F6E8FA6727BD71D300F85C9F /* SideBarVC.swift */,
+				F6E8FA4B27BD6E9000F85C9F /* MyNote-Bridging-Header.h */,
 				F6EBC87627B668B500C73CAD /* AppDelegate.swift */,
 				F6EBC87827B668B500C73CAD /* SceneDelegate.swift */,
 				F6EBC87A27B668B500C73CAD /* ViewController.swift */,
@@ -137,7 +139,8 @@
 				F678B79327B7AF8900F4C4D7 /* MemoCell.swift */,
 				F678B79527B7AFA500F4C4D7 /* MemoData.swift */,
 				F61FCC3527BBA3E0000F2B3C /* CSLogButton.swift */,
-				F6E8FA4B27BD6E9000F85C9F /* MyNote-Bridging-Header.h */,
+				F6E8FA6727BD71D300F85C9F /* SideBarVC.swift */,
+				F6F5BF6B27C075DD00193BEF /* ProfileVC.swift */,
 			);
 			path = MyNote;
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 				F6E8FA6827BD71D300F85C9F /* SideBarVC.swift in Sources */,
 				F6EBC88127B668B500C73CAD /* MyNote.xcdatamodeld in Sources */,
 				F61FCC3627BBA3E0000F2B3C /* CSLogButton.swift in Sources */,
+				F6F5BF6C27C075DD00193BEF /* ProfileVC.swift in Sources */,
 				F678B79627B7AFA500F4C4D7 /* MemoData.swift in Sources */,
 				F6E8FA4E27BD6E9000F85C9F /* SWRevealViewController.m in Sources */,
 				F678B79227B7AF3400F4C4D7 /* MemoReadVC.swift in Sources */,

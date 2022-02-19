@@ -34,7 +34,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="med-q6-yWJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-113" y="729"/>
+            <point key="canvasLocation" x="-113" y="752"/>
         </scene>
         <!--상세 화면의 이미지 뷰-->
         <scene sceneID="NjD-rR-N1J">
@@ -89,7 +89,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fqy-5B-B8Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="777" y="729"/>
+            <point key="canvasLocation" x="777" y="752"/>
         </scene>
         <!--목록-->
         <scene sceneID="Ou8-LY-v6n">
@@ -256,7 +256,7 @@
         <!--메모 작성-->
         <scene sceneID="gXX-jR-Zgi">
             <objects>
-                <viewController id="p6a-fy-Zya" customClass="MemoFormVC" customModule="MyNote" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MemoForm" id="p6a-fy-Zya" customClass="MemoFormVC" customModule="MyNote" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="28V-nU-Wdc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -312,6 +312,22 @@
             </objects>
             <point key="canvasLocation" x="1616" y="21"/>
         </scene>
+        <!--ProfileVC-->
+        <scene sceneID="XbX-28-ehU">
+            <objects>
+                <viewController id="wcF-rd-P4f" customClass="ProfileVC" customModule="MyNote" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kSq-Ca-I0S">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="wdF-jF-Mxp"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="w9U-OH-wDU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hWd-k2-5SN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2591" y="751"/>
+        </scene>
         <!--Reveal View Controller-->
         <scene sceneID="GCZ-Ul-JgV">
             <objects>
@@ -329,7 +345,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xdQ-qh-FP5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1100" y="3"/>
+            <point key="canvasLocation" x="-1106" y="21"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="eUQ-Yn-kcH">
@@ -346,6 +362,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mNB-3v-cgn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-112" y="22"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7QS-H3-cvT">
+            <objects>
+                <navigationController storyboardIdentifier="_Profile" automaticallyAdjustsScrollViewInsets="NO" hidesBarsOnTap="YES" hidesBarsWhenKeyboardAppears="YES" hidesBarsWhenVerticallyCompact="YES" id="6KE-ze-5Da" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5Wh-Cy-dJb">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="wcF-rd-P4f" kind="relationship" relationship="rootViewController" id="3d1-ld-gkw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XBx-p5-PKa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1616" y="751"/>
         </scene>
     </scenes>
     <resources>
