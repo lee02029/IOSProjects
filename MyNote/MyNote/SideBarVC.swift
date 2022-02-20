@@ -38,14 +38,14 @@ class SideBarVC: UITableViewController {
         headerView.backgroundColor = .brown
         self.tableView.tableHeaderView = headerView
         self.nameLabel.frame = CGRect(x: 70, y: 15, width: 100, height: 30)
-        self.nameLabel.text = "꼼꼼한 재은 씨"
+        self.nameLabel.text = "이윤재"
         self.nameLabel.textColor = .white
         self.nameLabel.font = UIFont.boldSystemFont(ofSize: 15)
         self.emailLabel.backgroundColor = .clear
         
         headerView.addSubview(self.nameLabel)
         self.emailLabel.frame = CGRect(x: 70, y: 30, width: 100, height: 30)
-        self.emailLabel.text = "sqlpro@naver.com"
+        self.emailLabel.text = "kkang47140@gmail.com"
         self.emailLabel.textColor = .white
         self.emailLabel.font = UIFont.systemFont(ofSize: 11)
         self.emailLabel.backgroundColor = .clear
@@ -69,7 +69,7 @@ class SideBarVC: UITableViewController {
             target.pushViewController(uv!, animated: true)
             self.revealViewController().revealToggle(self)
         } else if indexPath.row == 5{
-            let uv = self.storyboard?.instantiateViewController(withIdentifier: "Profile")
+            let uv = self.storyboard?.instantiateViewController(withIdentifier: "_Profile")
             uv?.modalPresentationStyle = .fullScreen
             self.present(uv!, animated: true) {
                 self.revealViewController().revealToggle(self)

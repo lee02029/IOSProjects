@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>소원</key>
+	<string>호부호형</string>
+	<key>직업</key>
+	<string>의적</string>
+	<key>성별</key>
+	<string>남</string>
+	<key>결혼유무</key>
+	<false/>
+	<key>국적</key>
+	<array>
+		<string>조선</string>
+		<string>율도국</string>
+	</array>
+	<key>나이</key>
+	<integer>24</integer>
+	<key>이름</key>
+	<string>홍길동</string>
+</dict>
+</plist>
