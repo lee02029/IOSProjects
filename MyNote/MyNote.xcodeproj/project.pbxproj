@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F609C4C727C8E82A0034F426 /* UserInfoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F609C4C627C8E82A0034F426 /* UserInfoManager.swift */; };
 		F61FCC3627BBA3E0000F2B3C /* CSLogButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61FCC3527BBA3E0000F2B3C /* CSLogButton.swift */; };
 		F678B78E27B7AF1400F4C4D7 /* MemoListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F678B78D27B7AF1400F4C4D7 /* MemoListVC.swift */; };
 		F678B79027B7AF2900F4C4D7 /* MemoFormVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F678B78F27B7AF2900F4C4D7 /* MemoFormVC.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F609C4C627C8E82A0034F426 /* UserInfoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoManager.swift; sourceTree = "<group>"; };
 		F61FCC3527BBA3E0000F2B3C /* CSLogButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSLogButton.swift; sourceTree = "<group>"; };
 		F678B78D27B7AF1400F4C4D7 /* MemoListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListVC.swift; sourceTree = "<group>"; };
 		F678B78F27B7AF2900F4C4D7 /* MemoFormVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoFormVC.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 				F61FCC3527BBA3E0000F2B3C /* CSLogButton.swift */,
 				F6E8FA6727BD71D300F85C9F /* SideBarVC.swift */,
 				F6F5BF6B27C075DD00193BEF /* ProfileVC.swift */,
+				F609C4C627C8E82A0034F426 /* UserInfoManager.swift */,
 			);
 			path = MyNote;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F609C4C727C8E82A0034F426 /* UserInfoManager.swift in Sources */,
 				F6EBC87B27B668B500C73CAD /* ViewController.swift in Sources */,
 				F678B78E27B7AF1400F4C4D7 /* MemoListVC.swift in Sources */,
 				F678B79027B7AF2900F4C4D7 /* MemoFormVC.swift in Sources */,
