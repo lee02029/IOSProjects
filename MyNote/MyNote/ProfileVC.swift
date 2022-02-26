@@ -7,6 +7,7 @@
 
 import UIKit
 class ProfileVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    let uinfo = UserInfoManager()
     let profileImage = UIImageView()
     let tv = UITableView()
     
@@ -24,7 +25,7 @@ class ProfileVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         bgImg.layer.masksToBounds = true
         self.view.addSubview(bgImg)
         
-        let image = UIImage(named: "account.jpg")
+        let image = self.uinfo.profile
         self.profileImage.image = image
         self.profileImage.frame.size = CGSize(width: 100, height: 100)
         self.profileImage.center = CGPoint(x: self.view.frame.width / 2, y: 130)
@@ -40,6 +41,7 @@ class ProfileVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         self.view.addSubview(self.tv)
         
         self.navigationController?.navigationBar.isHidden = true
+        self.drawBtn()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -55,10 +57,10 @@ class ProfileVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         switch indexPath.row {
         case 0 :
             cell.textLabel?.text = "이름"
-            cell.detailTextLabel?.text = "이윤재"
+            cell.detailTextLabel?.text = self.uinfo.name ?? "Login please"
         case 1 :
             cell.textLabel?.text = "계정"
-            cell.detailTextLabel?.text = "kkang47140@gmail.com"
+            cell.detailTextLabel?.text = self.uinfo.account ?? "Login please"
         default :
             ()
         }
@@ -66,7 +68,77 @@ class ProfileVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if self.uinfo.isLogin == false {
+            self.doLogin(self.tv)
+        }
+    }
+    
+    func drawBtn() {
+        let v = UIView()
+        v.frame.size.width = self.view.frame.width
+        v.frame.size.height = 40
+        v.frame.origin.x = 0
+        v.frame.origin.y = self.tv.frame.origin.y + self.tv.frame.height
+        v.backgroundColor = UIColor(red: 0.98, green: 0.98, blue: 0.98, alpha: 1.0)
+        self.view.addSubview(v)
+        let btn = UIButton(type: .system)
+        btn.frame.size.width = 100
+        btn.frame.size.height = 30
+        btn.center.x = v.frame.size.width / 2
+        btn.center.y = v.frame.size.height / 2
+        
+        if self.uinfo.isLogin == true {
+            btn.setTitle("로그아웃", for: .normal)
+            btn.addTarget(self, action: #selector(doLogout(_:)), for: .touchUpInside)
+        } else {
+            btn.setTitle("로그인", for: .normal)
+            btn.addTarget(self, action: #selector(doLogin(_:)), for: .touchUpInside)
+        }
+        v.addSubview(btn)
+    }
+    
     @objc func close(_ sender: Any) {
         self.presentingViewController?.dismiss(animated: true)
+    }
+    
+    @objc func doLogin(_ sender: Any) {
+        let loginAlert = UIAlertController(title: "LOGIN", message: nil, preferredStyle: .alert)
+        loginAlert.addTextField() { (tf) in
+            tf.placeholder = "Your Account"
+        }
+        loginAlert.addTextField() { (tf) in
+            tf.placeholder = "Password"
+            tf.isSecureTextEntry = true
+        }
+        loginAlert.addAction(UIAlertAction(title: "Cancel", style: .cancel))
+        loginAlert.addAction(UIAlertAction(title: "Login", style: .destructive) {(_) in
+            let account = loginAlert.textFields?[0].text ?? ""
+            let passwd = loginAlert.textFields?[1].text ?? ""
+            if self.uinfo.login(account: account, passwd: passwd) {
+                self.tv.reloadData()
+                self.profileImage.image = self.uinfo.profile
+                self.drawBtn()
+            } else {
+                let msg = "로그인에 실패하였습니다."
+                let alert = UIAlertController(title: nil, message: msg, preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .cancel))
+                self.present(alert, animated: false)
+            }
+        })
+        self.present(loginAlert, animated: false)
+    }
+    @objc func doLogout(_ sender: Any) {
+        let msg = "로그아웃하겠습니까?"
+        let alert = UIAlertController(title: nil, message: msg, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "취소", style: .cancel))
+        alert.addAction(UIAlertAction(title: "확인", style: .destructive) { (_) in
+            if self.uinfo.logout() {
+                self.tv.reloadData()
+                self.profileImage.image = self.uinfo.profile
+                self.drawBtn()
+            }
+        })
+        self.present(alert,animated: false)
     }
 }
