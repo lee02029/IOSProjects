@@ -7,6 +7,7 @@
 
 import UIKit
 class SideBarVC: UITableViewController {
+    let uinfo = UserInfoManager()
     let nameLabel = UILabel()
     let emailLabel = UILabel()
     let profileImage = UIImageView()
@@ -38,21 +39,21 @@ class SideBarVC: UITableViewController {
         headerView.backgroundColor = .brown
         self.tableView.tableHeaderView = headerView
         self.nameLabel.frame = CGRect(x: 70, y: 15, width: 100, height: 30)
-        self.nameLabel.text = "이윤재"
+//        self.nameLabel.text = "이윤재"
         self.nameLabel.textColor = .white
         self.nameLabel.font = UIFont.boldSystemFont(ofSize: 15)
         self.emailLabel.backgroundColor = .clear
         
         headerView.addSubview(self.nameLabel)
         self.emailLabel.frame = CGRect(x: 70, y: 30, width: 100, height: 30)
-        self.emailLabel.text = "kkang47140@gmail.com"
+//        self.emailLabel.text = "kkang47140@gmail.com"
         self.emailLabel.textColor = .white
         self.emailLabel.font = UIFont.systemFont(ofSize: 11)
         self.emailLabel.backgroundColor = .clear
         headerView.addSubview(self.emailLabel)
         
-        let defaultProfile = UIImage(named: "account.jpg")
-        self.profileImage.image = defaultProfile
+//        let defaultProfile = UIImage(named: "account.jpg")
+//        self.profileImage.image = defaultProfile
         self.profileImage.frame = CGRect(x: 10, y: 10, width: 50, height: 50)
         view.addSubview(self.profileImage)
         
@@ -75,5 +76,11 @@ class SideBarVC: UITableViewController {
                 self.revealViewController().revealToggle(self)
             }
         }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.nameLabel.text = self.uinfo.name ?? "Guest"
+        self.emailLabel.text = self.uinfo.account ?? ""
+        self.profileImage.image = self.uinfo.profile
     }
 }

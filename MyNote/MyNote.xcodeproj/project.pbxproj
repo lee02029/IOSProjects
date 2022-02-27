@@ -14,6 +14,10 @@
 		F678B79227B7AF3400F4C4D7 /* MemoReadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F678B79127B7AF3400F4C4D7 /* MemoReadVC.swift */; };
 		F678B79427B7AF8900F4C4D7 /* MemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F678B79327B7AF8900F4C4D7 /* MemoCell.swift */; };
 		F678B79627B7AFA500F4C4D7 /* MemoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F678B79527B7AFA500F4C4D7 /* MemoData.swift */; };
+		F6B4D95B27CB32B400BCC4F0 /* Tutorial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6B4D95A27CB32B400BCC4F0 /* Tutorial.storyboard */; };
+		F6B4D95D27CB371B00BCC4F0 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B4D95C27CB371B00BCC4F0 /* Utils.swift */; };
+		F6B4D95F27CB37CE00BCC4F0 /* TutorialContentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B4D95E27CB37CE00BCC4F0 /* TutorialContentsVC.swift */; };
+		F6B4D96127CB3C0B00BCC4F0 /* TutorialMasterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B4D96027CB3C0B00BCC4F0 /* TutorialMasterVC.swift */; };
 		F6E8FA4E27BD6E9000F85C9F /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E8FA4D27BD6E9000F85C9F /* SWRevealViewController.m */; };
 		F6E8FA5B27BD6EC300F85C9F /* icon04.png in Resources */ = {isa = PBXBuildFile; fileRef = F6E8FA4F27BD6EC300F85C9F /* icon04.png */; };
 		F6E8FA5C27BD6EC300F85C9F /* icon06.png in Resources */ = {isa = PBXBuildFile; fileRef = F6E8FA5027BD6EC300F85C9F /* icon06.png */; };
@@ -46,6 +50,10 @@
 		F678B79127B7AF3400F4C4D7 /* MemoReadVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoReadVC.swift; sourceTree = "<group>"; };
 		F678B79327B7AF8900F4C4D7 /* MemoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoCell.swift; sourceTree = "<group>"; };
 		F678B79527B7AFA500F4C4D7 /* MemoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoData.swift; sourceTree = "<group>"; };
+		F6B4D95A27CB32B400BCC4F0 /* Tutorial.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tutorial.storyboard; sourceTree = "<group>"; };
+		F6B4D95C27CB371B00BCC4F0 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		F6B4D95E27CB37CE00BCC4F0 /* TutorialContentsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialContentsVC.swift; sourceTree = "<group>"; };
+		F6B4D96027CB3C0B00BCC4F0 /* TutorialMasterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialMasterVC.swift; sourceTree = "<group>"; };
 		F6E8FA4B27BD6E9000F85C9F /* MyNote-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyNote-Bridging-Header.h"; sourceTree = "<group>"; };
 		F6E8FA4C27BD6E9000F85C9F /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		F6E8FA4D27BD6E9000F85C9F /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
@@ -144,6 +152,10 @@
 				F6E8FA6727BD71D300F85C9F /* SideBarVC.swift */,
 				F6F5BF6B27C075DD00193BEF /* ProfileVC.swift */,
 				F609C4C627C8E82A0034F426 /* UserInfoManager.swift */,
+				F6B4D95A27CB32B400BCC4F0 /* Tutorial.storyboard */,
+				F6B4D95C27CB371B00BCC4F0 /* Utils.swift */,
+				F6B4D95E27CB37CE00BCC4F0 /* TutorialContentsVC.swift */,
+				F6B4D96027CB3C0B00BCC4F0 /* TutorialMasterVC.swift */,
 			);
 			path = MyNote;
 			sourceTree = "<group>";
@@ -221,6 +233,7 @@
 				F6E8FA5F27BD6EC300F85C9F /* profile-bg.png in Resources */,
 				F6E8FA6027BD6EC300F85C9F /* sidemenu.png in Resources */,
 				F6EBC87E27B668B500C73CAD /* Main.storyboard in Resources */,
+				F6B4D95B27CB32B400BCC4F0 /* Tutorial.storyboard in Resources */,
 				F6E8FA5E27BD6EC300F85C9F /* icon05.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -237,6 +250,7 @@
 				F678B78E27B7AF1400F4C4D7 /* MemoListVC.swift in Sources */,
 				F678B79027B7AF2900F4C4D7 /* MemoFormVC.swift in Sources */,
 				F6EBC87727B668B500C73CAD /* AppDelegate.swift in Sources */,
+				F6B4D95D27CB371B00BCC4F0 /* Utils.swift in Sources */,
 				F6EBC87927B668B500C73CAD /* SceneDelegate.swift in Sources */,
 				F6E8FA6827BD71D300F85C9F /* SideBarVC.swift in Sources */,
 				F6EBC88127B668B500C73CAD /* MyNote.xcdatamodeld in Sources */,
@@ -245,6 +259,8 @@
 				F678B79627B7AFA500F4C4D7 /* MemoData.swift in Sources */,
 				F6E8FA4E27BD6E9000F85C9F /* SWRevealViewController.m in Sources */,
 				F678B79227B7AF3400F4C4D7 /* MemoReadVC.swift in Sources */,
+				F6B4D96127CB3C0B00BCC4F0 /* TutorialMasterVC.swift in Sources */,
+				F6B4D95F27CB37CE00BCC4F0 /* TutorialContentsVC.swift in Sources */,
 				F678B79427B7AF8900F4C4D7 /* MemoCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -11,7 +11,13 @@ class MemoListVC: UITableViewController {
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
 
     override func viewWillAppear(_ animated: Bool) {
-        self.tableView.reloadData()
+        let ud = UserDefaults.standard
+        if ud.bool(forKey: UserInfoKey.Tutorial) == false {
+            let vc = self.instanceTutorialVC(name: "MasterVC")
+            vc?.modalPresentationStyle = .fullScreen
+            self.present(vc!, animated: false)
+            return
+        }
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
