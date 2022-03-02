@@ -12,7 +12,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         var db: OpaquePointer? = nil
         var stmt: OpaquePointer? = nil
-        
 //        let filedb = FileManager()
 //        let docPathURL = fileMgr.urls(for: .documentDirectory, in:.userDomainMask).first!
 //        let dbPath = docPathURL.appendingPathComponent("db.sqlite")?.path
