@@ -24,6 +24,7 @@
 		F63599FB27D0B7910086E5BC /* EmployeeListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63599FA27D0B7910086E5BC /* EmployeeListVC.swift */; };
 		F63599FD27D0B8700086E5BC /* hr.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = F63599FC27D0B8700086E5BC /* hr.sqlite */; };
 		F63599FF27D0B8830086E5BC /* DepartmentDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63599FE27D0B8830086E5BC /* DepartmentDAO.swift */; };
+		F6E2CB7427D2353100781472 /* EmployeeDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E2CB7327D2353100781472 /* EmployeeDAO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		F63599FA27D0B7910086E5BC /* EmployeeListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListVC.swift; sourceTree = "<group>"; };
 		F63599FC27D0B8700086E5BC /* hr.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = hr.sqlite; sourceTree = "<group>"; };
 		F63599FE27D0B8830086E5BC /* DepartmentDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartmentDAO.swift; sourceTree = "<group>"; };
+		F6E2CB7327D2353100781472 /* EmployeeDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDAO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				F63599F827D0B7810086E5BC /* DepartmentListVC.swift */,
 				F63599FA27D0B7910086E5BC /* EmployeeListVC.swift */,
 				F63599FE27D0B8830086E5BC /* DepartmentDAO.swift */,
+				F6E2CB7327D2353100781472 /* EmployeeDAO.swift */,
 			);
 			path = "Chapter06-HR";
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 				F63599FF27D0B8830086E5BC /* DepartmentDAO.swift in Sources */,
 				F63599F627D0B03E0086E5BC /* FMDatabasePool.m in Sources */,
 				F63599D827D0B0080086E5BC /* Chapter06_HR.xcdatamodeld in Sources */,
+				F6E2CB7427D2353100781472 /* EmployeeDAO.swift in Sources */,
 				F63599F427D0B03E0086E5BC /* FMDatabaseAdditions.m in Sources */,
 				F63599F527D0B03E0086E5BC /* FMResultSet.m in Sources */,
 				F63599F327D0B03E0086E5BC /* FMDatabaseQueue.m in Sources */,
