@@ -6,7 +6,9 @@
 //
 
 import UIKit
-class DepartmentDAO {
+class DepartmentDAO : UITableViewController{
+    var departList: [(departCd: Int, departTitle:String, departAddr: String)]!
+    let departDAO = DepartmentDAO()
     typealias DepartRecord = (Int,String,String)
     lazy var fmdb : FMDatabase! = {
         let fileMgr = FileManager.default
@@ -22,6 +24,7 @@ class DepartmentDAO {
     init() {
         self.fmdb.open()
     }
+    
     deinit {
         self.fmdb.close()
     }
@@ -77,5 +80,13 @@ class DepartmentDAO {
             print("Insert Error :\(error.localizedDescription)")
             return false
         }
+    }
+    
+    func initUI() {
+        let navTitle = UILabel(frame: CGRect(x: 0, y: 0, width: 200, height: 60))
+        navTitle.numberOfLines = 2
+        navTitle.textAlignment = .center
+        navTitle.font = UIFont.systemFont(ofSize: 14)
+        navTitle.text = "부서 목록 \n" + "총 \(self.departList.count) 개"
     }
 }

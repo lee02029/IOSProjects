@@ -24,6 +24,7 @@
 		F63599FB27D0B7910086E5BC /* EmployeeListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63599FA27D0B7910086E5BC /* EmployeeListVC.swift */; };
 		F63599FD27D0B8700086E5BC /* hr.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = F63599FC27D0B8700086E5BC /* hr.sqlite */; };
 		F63599FF27D0B8830086E5BC /* DepartmentDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63599FE27D0B8830086E5BC /* DepartmentDAO.swift */; };
+		F668FED427D4A3210063DAD1 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F668FED327D4A3210063DAD1 /* libsqlite3.tbd */; };
 		F6E2CB7427D2353100781472 /* EmployeeDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E2CB7327D2353100781472 /* EmployeeDAO.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,7 +37,6 @@
 		F63599D727D0B0080086E5BC /* Chapter06_HR.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Chapter06_HR.xcdatamodel; sourceTree = "<group>"; };
 		F63599D927D0B0090086E5BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F63599DC27D0B0090086E5BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		F63599DE27D0B0090086E5BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F63599E527D0B03D0086E5BC /* Chapter06-HR-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Chapter06-HR-Bridging-Header.h"; sourceTree = "<group>"; };
 		F63599E627D0B03E0086E5BC /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
 		F63599E727D0B03E0086E5BC /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
@@ -54,6 +54,7 @@
 		F63599FA27D0B7910086E5BC /* EmployeeListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListVC.swift; sourceTree = "<group>"; };
 		F63599FC27D0B8700086E5BC /* hr.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = hr.sqlite; sourceTree = "<group>"; };
 		F63599FE27D0B8830086E5BC /* DepartmentDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartmentDAO.swift; sourceTree = "<group>"; };
+		F668FED327D4A3210063DAD1 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		F6E2CB7327D2353100781472 /* EmployeeDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDAO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F668FED427D4A3210063DAD1 /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +76,7 @@
 				F63599E427D0B0120086E5BC /* fmdb */,
 				F63599CC27D0B0080086E5BC /* Chapter06-HR */,
 				F63599CB27D0B0080086E5BC /* Products */,
+				F668FED227D4A3210063DAD1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,12 +98,13 @@
 				F63599D327D0B0080086E5BC /* Main.storyboard */,
 				F63599D927D0B0090086E5BC /* Assets.xcassets */,
 				F63599DB27D0B0090086E5BC /* LaunchScreen.storyboard */,
-				F63599DE27D0B0090086E5BC /* Info.plist */,
 				F63599D627D0B0080086E5BC /* Chapter06_HR.xcdatamodeld */,
 				F63599F827D0B7810086E5BC /* DepartmentListVC.swift */,
 				F63599FA27D0B7910086E5BC /* EmployeeListVC.swift */,
 				F63599FE27D0B8830086E5BC /* DepartmentDAO.swift */,
 				F6E2CB7327D2353100781472 /* EmployeeDAO.swift */,
+				F63599F127D0B03E0086E5BC /* Info.plist */,
+				F63599E527D0B03D0086E5BC /* Chapter06-HR-Bridging-Header.h */,
 			);
 			path = "Chapter06-HR";
 			sourceTree = "<group>";
@@ -119,10 +123,16 @@
 				F63599EA27D0B03E0086E5BC /* FMDB.h */,
 				F63599EB27D0B03E0086E5BC /* FMResultSet.h */,
 				F63599EC27D0B03E0086E5BC /* FMResultSet.m */,
-				F63599F127D0B03E0086E5BC /* Info.plist */,
-				F63599E527D0B03D0086E5BC /* Chapter06-HR-Bridging-Header.h */,
 			);
 			path = fmdb;
+			sourceTree = "<group>";
+		};
+		F668FED227D4A3210063DAD1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F668FED327D4A3210063DAD1 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,6 +305,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OBJC_BRIDGING_HEADER = "Chapter06-HR/Chapter06-HR-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "Chapter06_HR-Swift.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -350,6 +361,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OBJC_BRIDGING_HEADER = "Chapter06-HR/Chapter06-HR-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "Chapter06_HR-Swift.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
