@@ -29,7 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F63599CA27D0B0080086E5BC /* Chapter06-HR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chapter06-HR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F63599CA27D0B0080086E5BC /* Chapter06-HR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "Chapter06-HR.app"; path = "/Users/yoonjae/Documents/Projects/Chapter06-HR/build/Debug-iphoneos/Chapter06-HR.app"; sourceTree = "<absolute>"; };
 		F63599CD27D0B0080086E5BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F63599CF27D0B0080086E5BC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F63599D127D0B0080086E5BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -75,17 +75,8 @@
 			children = (
 				F63599E427D0B0120086E5BC /* fmdb */,
 				F63599CC27D0B0080086E5BC /* Chapter06-HR */,
-				F63599CB27D0B0080086E5BC /* Products */,
 				F668FED227D4A3210063DAD1 /* Frameworks */,
 			);
-			sourceTree = "<group>";
-		};
-		F63599CB27D0B0080086E5BC /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				F63599CA27D0B0080086E5BC /* Chapter06-HR.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		F63599CC27D0B0080086E5BC /* Chapter06-HR */ = {
@@ -180,7 +171,7 @@
 				Base,
 			);
 			mainGroup = F63599C127D0B0080086E5BC;
-			productRefGroup = F63599CB27D0B0080086E5BC /* Products */;
+			productRefGroup = F63599C127D0B0080086E5BC;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -391,7 +382,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yoonjae.Chapter06-HR";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "fmdb/Chapter06-HR-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Chapter06-HR/Chapter06-HR-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -422,7 +413,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yoonjae.Chapter06-HR";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "fmdb/Chapter06-HR-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Chapter06-HR/Chapter06-HR-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
